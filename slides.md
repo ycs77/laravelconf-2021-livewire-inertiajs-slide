@@ -156,7 +156,7 @@ layout: center
 ---
 
 <div class="text-center">
-  <div class="inline-block p-3 bg-white rounded-lg mb-8">
+  <div class="inline-block px-6 py-4 bg-white rounded-lg mb-8">
     <img src="/images/livewire-logo.svg" />
   </div>
 </div>
@@ -175,11 +175,12 @@ clicks: 3
 
 <ExternalLink livewire />
 
-<div class="grid grid-cols-2 gap-6">
-<div>
+<div class="grid grid-cols-2 gap-x-6 gap-y-2">
+<div class="text-gray-400 tracking-wide">Livewire 組件</div>
+<div class="text-gray-400 tracking-wide">Livewire 視圖</div>
 
-### Livewire 組件 - *Counter.php*
-```php {all|12-15|5|7-10} {at:0}
+```php {all|13-16|6|8-11} {at:0}
+// app/Http/Livewire/Counter.php
 use Livewire\Component;
 
 class Counter extends Component
@@ -198,12 +199,8 @@ class Counter extends Component
 }
 ```
 
-</div>
-
-<div>
-
-### Livewire 視圖 - *counter.blade.php*
-```html {all|all|4|2} {at:0}
+```html {all|all|5|3} {at:0}
+<!-- resources/views/livewire/counter.blade.php -->
 <div style="text-align: center">
     <button wire:click="increment">+</button>
 
@@ -211,7 +208,6 @@ class Counter extends Component
 </div>
 ```
 
-</div>
 </div>
 
 ---
@@ -228,8 +224,9 @@ clicks: 3
 
 <ExternalLink livewire path="data-binding" />
 
-<div class="grid grid-cols-2 gap-6">
-<div>
+<div class="grid grid-cols-2 gap-x-6 gap-y-2">
+<div class="text-gray-400 tracking-wide">Livewire 組件</div>
+<div class="text-gray-400 tracking-wide">Livewire 視圖</div>
 
 ```php {all|5|6|7} {at:0}
 use Livewire\Component;
@@ -246,10 +243,6 @@ class DataBinding extends Component
     }
 }
 ```
-
-</div>
-
-<div>
 
 ```html {all|2,8|3-9|11-15} {at:0}
 <div>
@@ -271,7 +264,6 @@ class DataBinding extends Component
 ```
 
 </div>
-</div>
 
 ---
 clicks: 2
@@ -281,8 +273,9 @@ clicks: 2
 
 <ExternalLink livewire path="search" />
 
-<div class="grid grid-cols-2 gap-6">
-<div>
+<div class="grid grid-cols-2 gap-x-6 gap-y-2">
+<div class="text-gray-400 tracking-wide">Livewire 組件</div>
+<div class="text-gray-400 tracking-wide">Livewire 視圖</div>
 
 ```php {all|6-10|15} {at:0}
 use App\Models\Language;
@@ -305,10 +298,6 @@ class Search extends Component
 }
 ```
 
-</div>
-
-<div>
-
 ```html {all|2|4-8} {at:0}
 <div>
     <input type="text" wire:model="search">
@@ -322,7 +311,6 @@ class Search extends Component
 ```
 
 </div>
-</div>
 
 ---
 layout: center
@@ -332,13 +320,15 @@ class: text-center
 # 用 <YellowText bold>PHP & Blade</YellowText> 寫出 <YellowText bold>JavaScript</YellowText> 的效果
 
 ---
+clicks: 1
+---
 
 # Blade vs Vue?
 
-<div class="grid grid-cols-2 gap-8">
-<div>
+<div class="grid grid-cols-[300px,1fr] gap-x-6 gap-y-2">
+<v-clicks at="0" :every="2">
 
-### 同時用 Blade 和 Vue 來組織視圖
+- 同時用 <YellowText bold>Blade</YellowText> 和 <YellowText bold>Vue</YellowText> 來組織視圖
 
 ```html
 <div class="container">
@@ -352,16 +342,13 @@ class: text-center
 </div>
 ```
 
-</div>
-<div v-click>
-
-### 視圖全權交給 Vue (View)
+- 視圖全權交給 <YellowText bold>Vue</YellowText> (View)
 
 ```html
 <items-list :data="@json($page)" />
 ```
 
-</div>
+</v-clicks>
 </div>
 
 ---
@@ -405,9 +392,9 @@ clicks: 4
 
 <div class="max-w-xl mx-auto">
 <div class="text-center">
-  <div class="inline-flex flex-col px-6 py-4 bg-gradient-to-r from-[#9553e9] to-[#9553e9] rounded-lg mb-8">
-    <img src="/images/inertia-logo.svg" />
-    <img class="mt-2" src="/images/inertia-logo-text.svg" />
+  <div class="inline-flex flex-col px-12 py-5 bg-gradient-to-r from-[#9553e9] to-[#6d74ed] rounded-lg mb-8">
+    <img class="w-[150px]" src="/images/inertia-logo.svg" />
+    <img class="w-[150px] mt-2" src="/images/inertia-logo-text.svg" />
   </div>
 </div>
 <v-clicks at="0">
@@ -427,7 +414,7 @@ clicks: 4
 
 <div class="h-[400px] grid grid-cols-7">
   <div class="col-span-3 flex items-center text-3xl pl-12">
-    <span class="bg-indigo-800 px-2 text-2xl font-bold rounded-md mr-3">GET</span>
+    <span class="bg-indigo-800 px-2 text-lg font-bold rounded-md mr-3">GET</span>
     <YellowText bold>/events/80</YellowText>
   </div>
   <div class="col-span-2 flex justify-center items-center relative">
@@ -439,7 +426,7 @@ clicks: 4
     <div class="mt-4 text-xl font-bold">HTML 響應</div>
   </div>
   <div class="col-span-3 flex items-center text-3xl pl-12">
-    <span class="bg-indigo-800 px-2 text-2xl font-bold rounded-md mr-3">GET</span>
+    <span class="bg-indigo-800 px-2 text-lg font-bold rounded-md mr-3">GET</span>
     <YellowText bold>/api/events/80</YellowText>
   </div>
   <div class="col-span-2 flex justify-center items-center relative">
@@ -458,7 +445,7 @@ clicks: 4
 
 <div class="h-[400px] grid grid-cols-7 pt-10">
   <div class="col-span-3 flex items-center text-3xl pl-12">
-    <span class="bg-indigo-800 px-2 text-2xl font-bold rounded-md mr-3">GET</span>
+    <span class="bg-indigo-800 px-2 text-lg font-bold rounded-md mr-3">GET</span>
     <YellowText bold>/events/80</YellowText>
   </div>
   <div class="col-span-2 flex justify-center items-center relative">
@@ -480,38 +467,56 @@ clicks: 4
 
 ---
 
-# Inertia 運作方式
+# 瀏覽頁面
 
-<div class="grid grid-cols-2">
+<div class="grid grid-cols-2 gap-12">
 <div>
 
-### 瀏覽頁面
-
-正常瀏覽頁面時，會回傳正常的 HTML 頁面，包含基本的 CSS 和 JS，還有用來啟動 SPA 應用的 &lt;div&gt; 根元素。
+- 回傳 HTML 頁面
+- 基本的 CSS 和 JS
+- 用來啟動 SPA 應用的 **&lt;div&gt; 根元素**<br>
+  (`data-page` 屬性中包含 <YellowText bold>Inertia Page 物件</YellowText>)
 
 </div>
 <div>
-  <img src="" />
+  <img src="/images/code 1.png" />
 </div>
 </div>
 
+---
+
+# Inertia 加載新頁面
+
+<div class="grid grid-cols-2 gap-12">
+<div class="flex flex-col justify-between">
+<div>
+
+- 點擊 &lt;inertia-link&gt; 組件，
+- Inertia 會攔截點擊事件並發送一個 **XHR 請求**<br>
+  並回傳 <YellowText bold>Inertia Page 物件</YellowText>
+- 然後更新當前頁面的 **前端組件** 和 **瀏覽紀錄**
+
+</div>
+<div v-click class="p-4 border border-white rounded-lg">
+
+### <YellowText bold>Inertia Page 物件</YellowText>
+
+- **component**：前端組件名稱
+- **props**：前端組件 props (資料)
+- **url**：頁面 URL
+- **version**：當前資產版本
+  <div class="text-xs text-indigo-300">(在 Laravel 中會自動使用 `mix-manifest.json` 生成的 Hash 值作為 資產版本)</div>
+
+</div>
+</div>
+<div>
+  <img src="/images/code 2.png" />
+</div>
+</div>
 
 ---
 
-# Inertia 運作方式
-
----
-
-# Inertia Page 物件
-
-- component：前端組件名稱
-- props：前端組件 props (資料)
-- url：頁面 URL
-- version：當前資產版本
-
----
-
-# Inertia 支援的框架 (Adapters)
+# Inertia Adapters (支援的框架)
 
 <div class="text-lg mt-8">
 
@@ -535,21 +540,200 @@ clicks: 4
 </div>
 
 ---
+clicks: 2
+---
 
 # Hello Inertia
 
 <ExternalLink inertia />
 
+<div class="grid grid-cols-[130px,1fr,1fr] gap-x-4 gap-y-2">
+<div></div>
+<div class="text-gray-400 tracking-wider text-sm uppercase">路由</div>
+<div class="text-gray-400 tracking-wider text-sm uppercase">Vue 組件</div>
+
+<v-clicks at="0" :every="3">
+
+- 渲染頁面
+
+```php
+// routes/web.php
+use Inertia\Inertia;
+
+Route::get('/', function () {
+    return Inertia::render('Home');
+});
+```
+
+```vue
+<!-- resources/js/pages/Home.vue -->
+<template>
+  <h1>首頁</h1>
+</template>
+```
+
+- Prop 傳資料
+
+```php {all|6} {at:1}
+// routes/web.php
+use Inertia\Inertia;
+
+Route::get('about', function () {
+    return Inertia::render('About', [
+        'name' => 'Lucas',
+    ]);
+});
+```
+
+```vue {all|4,10} {at:1}
+<!-- resources/js/pages/About.vue -->
+<template>
+  <h1>關於</h1>
+  <div>你好~ 我是 {{ name }}</div>
+</template>
+
+<script>
+export default {
+  props: {
+    name: String,
+  },
+}
+</script>
+```
+
+</v-clicks>
+</div>
+
+---
+clicks: 1
 ---
 
-# 運作原理
+# 留言板 - 留言列表
 
-https://github.com/ycs77/laravel-without-api-and-inertiajs-30days/blob/main/docs/Day_02.md
+<ExternalLink inertia path="comments" />
+
+資料庫拿資料
+
+<div class="grid grid-cols-2 gap-6">
+
+```php {all|3-9} {at:0}
+Route::get('comments', function () {
+    return Inertia::render('Comments', [
+        'comments' => Comment::all()
+            ->transform(fn (Comment $comment) => [
+                'id' => $comment->id,
+                'name' => $comment->name,
+                'content' => $comment->content,
+                'created_at' => $comment->created_at->format('Y/m/d H:i'),
+            ]),
+    ]);
+});
+```
+
+```vue {all|5-9,16} {at:0}
+<template>
+  <h1>留言</h1>
+  ...
+  <ul>
+    <li v-for="comment in comments">
+      <h2>姓名：{{ comment.name }}</h2>
+      <div>{{ comment.created_at }}</div>
+      <div>內容：{{ comment.content }}</div>
+    </li>
+  </ul>
+</template>
+
+<script>
+export default {
+  props: {
+    comments: Array,
+  },
+  // ...
+}
+</script>
+```
+
+</div>
 
 ---
 
-# ...
+# 留言板 - 表單送出
 
+<ExternalLink inertia path="comments" />
+
+```php
+Route::post('comments', function (Request $request) {
+    $data = $request->validate([
+        'name' => 'required',
+        'content' => 'required',
+    ]);
+
+    Comment::create($data);
+
+    return back();
+});
+```
+
+---
+clicks: 3
+---
+
+# 留言板 - 表單送出
+
+<ExternalLink inertia path="comments" />
+
+<div class="grid grid-cols-2 gap-6">
+
+```vue {all|5,10|4,15|6-8,11-13} {at:0}
+<template>
+  <h1>留言</h1>
+
+  <form @submit.prevent="storeComment">
+    <div>姓名：<input type="text" v-model="form.name"></div>
+    <div v-if="form.errors.name" class="invalid">
+      {{ form.errors.name }}
+    </div>
+
+    <div>留言：<textarea v-model="form.content"></textarea></div>
+    <div v-if="form.errors.content" class="invalid">
+      {{ form.errors.content }}
+    </div>
+
+    <button>送出</button>
+  </form>
+  ...
+</template>
+```
+
+```vue {all|2,7-10|13-15|0} {at:0}
+<script>
+import { useForm } from '@inertiajs/inertia-vue3'
+
+export default {
+  // ...
+  setup() {
+    const form = useForm({
+      name: '',
+      content: '',
+    })
+
+    const storeComment = () => {
+      form.post('/comments', {
+        onSuccess: () => form.reset(),
+      })
+    }
+
+    return { form, storeComment }
+  },
+}
+</script>
+```
+
+</div>
+
+---
+layout: center
+class: text-center
 ---
 
 # TALL Stack
@@ -557,27 +741,33 @@ https://github.com/ycs77/laravel-without-api-and-inertiajs-30days/blob/main/docs
 Tailwind CSS + Alpine.js + Laravel + Livewire
 
 ---
+layout: center
+class: text-center
+---
 
 # VILT Stack
 
 Vue.js  +  Inertia.js  +  Laravel  +  Tailwind CSS
 
 ---
+layout: center
+class: text-center
+---
 
-# Laravel Jetstream
-
-...
+<div class="p-8 bg-white rounded shadow-indigo-600">
+  <img src="/images/jetstream-logo.svg" />
+</div>
 
 ---
 
 # Livewire vs Inertia.js
 
 |                 | <strong class="!text-livewire text-xl">Livewire</strong> | <strong class="!text-inertia text-xl">Inertia.js</strong> |
-| --------------- | ------------------------------------------------------ | -------------------------------------------------------- |
-| **視圖 (View)** | Blade、PHP、Alpine.js                                  | 前端框架 Vue、React...                                   |
-| **框架**        | Laravel                                                | 支援 Inertia 的框架                                      |
-| **SEO**         | <strong class="!text-green-400">易</strong>            | <strong class="!text-red-400">難</strong>                |
-| **總結**        | 有點像 Vue 的 Laravel 全端框架                         | 前後端框架的膠水                                         |
+| --------------- | -------------------------------------------------------- | --------------------------------------------------------- |
+| **視圖 (View)** | Blade、PHP、Alpine.js                                    | 前端框架 Vue、React...                                    |
+| **框架**        | Laravel                                                  | 支援 Inertia 的框架                                       |
+| **SEO**         | <strong class="!text-green-400">易</strong>              | <strong class="!text-red-400">難</strong>                 |
+| **總結**        | 用 PHP 寫出 JavaScript 的效果                    | 前後端框架的膠水                                          |
 
 ---
 layout: center

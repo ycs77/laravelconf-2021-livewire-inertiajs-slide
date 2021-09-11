@@ -1,6 +1,6 @@
 # Livewire vs Inertia.js | 關於如何選擇全端框架這檔事
 
-在 {Laravel x Vue}Conf Taiwan 2021 發表的講題
+{Laravel x Vue}Conf Taiwan 2021
 
 ## 簡介
 
@@ -12,8 +12,10 @@
 
 - `yarn install`
 - `yarn dev`
-- visit http://localhost:3030
+- 開啟 http://localhost:3030
 
 ## 參考
 
+* [Livewire 官網](https://laravel-livewire.com/)
+* [Inertia.js 官網](https://inertiajs.com/)
 * [前端渲染的後端應用 - 用 Inertia.js 拉近 Laravel 和 Vue.js 的距離](https://docs.google.com/presentation/d/1d5W98rR35jeMDLcsV9xqaoqd-Vdo7_hnsRvuy90AzE0/edit)
