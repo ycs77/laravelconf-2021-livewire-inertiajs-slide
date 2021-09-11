@@ -159,26 +159,6 @@
     "@slidev/types" "0.22.7"
     js-yaml "^4.1.0"
 
-"@slidev/theme-default@*":
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/@slidev/theme-default/-/theme-default-0.20.0.tgz#d4a33c58019af0685e1106f9a10d56432cd276ab"
-  integrity sha512-Sl3b4UTX78kbxNt56lE4ZhS9L8QgGsROCiTgcaVsXoOaO+yPyySpSYw45JEBj1DXBTaP+THLVi1Xqu8t8bVH1Q==
-  dependencies:
-    "@slidev/types" "^0.22.7"
-    codemirror-theme-vars "^0.1.1"
-    prism-theme-vars "^0.2.2"
-    theme-vitesse "^0.1.12"
-
-"@slidev/theme-seriph@*":
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/@slidev/theme-seriph/-/theme-seriph-0.20.0.tgz#bf81bee254872a0625c833ce929fbeffd4297d1f"
-  integrity sha512-GOUpfstthBi+VrAxpgThrFNP32KnZDa3SmS/caqlBxBvTXNWV/EqZztO3zbJnG1EpDLMGZc0XaAus8HaO9nfCQ==
-  dependencies:
-    "@slidev/types" "^0.22.7"
-    codemirror-theme-vars "^0.1.1"
-    prism-theme-vars "^0.2.2"
-    theme-vitesse "^0.1.12"
-
 "@slidev/types@0.22.7", "@slidev/types@^0.22.7":
   version "0.22.7"
   resolved "https://registry.yarnpkg.com/@slidev/types/-/types-0.22.7.tgz#abe1c81fedd5db1475428832f65253f95722a6d8"
@@ -2169,10 +2149,10 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-slidev-theme-ycs77@^0.1.5:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/slidev-theme-ycs77/-/slidev-theme-ycs77-0.1.5.tgz#6a395d154c967e07f1788a2dab75ce12085d01ec"
-  integrity sha512-vWr1914OXb8dOOLP+M4Y0GqwGVaMX8BAEqvp9P9XHgWNXJu55oBE/r+LEAVBiQKrWPUUmf6Oepw0k/FQ8UuWoA==
+slidev-theme-ycs77@*:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/slidev-theme-ycs77/-/slidev-theme-ycs77-0.1.6.tgz#e591579c956d5c266359f439f4dc86f694d38c13"
+  integrity sha512-irfw1vQKobvg5zR97CuEYGRRnLwgdWYd0wKYAFdXA3XAiz6faPXF13wwQYh3OxaEO1zJk/56DGUVni0+cfcU8w==
   dependencies:
     "@slidev/types" "^0.22.7"
     codemirror-theme-vars "^0.1.1"

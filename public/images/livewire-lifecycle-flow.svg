@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="918px" height="563px" viewBox="0 0 918 563" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>How It Works Copy</title>
+    <g id="How-It-Works-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M249.225989,516.956437 C250.647163,516.985432 252.07188,517 253.5,517 C350.696651,517 432.132812,449.521323 453.517052,358.8554" id="Path" stroke="#AAB6BF" stroke-width="4" stroke-dasharray="13"></path>
+        <path d="M717.245317,123.322772 C700.606984,118.975211 683.146734,116.660758 665.145914,116.660758 C566.091573,116.660758 483.40593,186.743483 463.96885,280.029069 M459.94466,347.347377 C467.384724,445.403779 543.937228,514.814133 640.828145,526.237002" id="Shape" stroke="#AAB6BF" stroke-width="4" stroke-dasharray="13" transform="translate(588.594989, 321.448880) rotate(-8.000000) translate(-588.594989, -321.448880) "></path>
+        <g id="Initial" transform="translate(77.000000, 124.000000)">
+            <g id="Lines" transform="translate(86.000000, 49.000000)" stroke="#AAB6BF" stroke-dasharray="9" stroke-linecap="square" stroke-width="3">
+                <line x1="0.5" y1="0.5" x2="0.5" y2="26.5" id="Line-2"></line>
+                <line x1="0.5" y1="82.5" x2="0.5" y2="108.5" id="Line-2-Copy"></line>
+                <line x1="0.5" y1="82.5" x2="0.5" y2="108.5" id="Line-2-Copy-3"></line>
+                <line x1="0.5" y1="295.5" x2="0.5" y2="321.5" id="Line-2-Copy-4"></line>
+                <line x1="0.5" y1="160.5" x2="0.5" y2="240.5" id="Line-2-Copy-2"></line>
+            </g>
+            <text id="{-count:-1-}" font-family="FiraCode-Bold, Fira Code" font-size="16" font-weight="bold" letter-spacing="0.9" fill="#2D3748">
+                <tspan x="23.5" y="392">{ count: 1 }</tspan>
+            </text>
+            <g id="Group-Copy-3" transform="translate(18.000000, 296.000000)">
+                <rect id="Rectangle" fill="#3182CE" x="0" y="0" width="136" height="46" rx="7"></rect>
+                <text id="dehydrate" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="16" font-weight="400" fill="#FFFFFF">
+                    <tspan x="30.656" y="28">dehydrate</tspan>
+                </text>
+            </g>
+            <rect id="Rectangle" fill="#F7FAFC" x="18" y="226" width="132" height="36"></rect>
+            <text id="&lt;h1&gt;1&lt;/h1&gt;" font-family="FiraCode-Bold, Fira Code" font-size="16" font-weight="bold" letter-spacing="0.9" fill="#AAB6BF">
+                <tspan x="33.5" y="251">&lt;h1&gt;1&lt;/h1&gt;</tspan>
+            </text>
+            <g id="Group-Copy-2" transform="translate(18.000000, 160.000000)">
+                <rect id="Rectangle" fill="#3182CE" x="0" y="0" width="136" height="46" rx="7"></rect>
+                <text id="render()" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="16" font-weight="400" fill="#FFFFFF">
+                    <tspan x="39.688" y="28">render()</tspan>
+                </text>
+            </g>
+            <g id="Group-Copy" transform="translate(18.000000, 80.000000)">
+                <rect id="Rectangle" fill="#3182CE" x="0" y="0" width="136" height="46" rx="7"></rect>
+                <text id="mount()" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="16" font-weight="400" fill="#FFFFFF">
+                    <tspan x="40" y="28">mount()</tspan>
+                </text>
+            </g>
+            <g id="Group">
+                <rect id="Rectangle" fill="#3182CE" x="-2.27373675e-13" y="0" width="172" height="46" rx="7"></rect>
+                <text id="&lt;livewire:counter&gt;" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="16" font-weight="400" fill="#FFFFFF">
+                    <tspan x="18.144" y="28">&lt;livewire:counter&gt;</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Subsequent" transform="translate(693.000000, 111.000000)">
+            <g id="Lines-Copy" transform="translate(69.000000, 28.000000)" stroke="#AAB6BF" stroke-dasharray="9" stroke-linecap="square" stroke-width="3">
+                <line x1="0.5" y1="0.5" x2="0.5" y2="17.5" id="Line-2"></line>
+                <line x1="0.5" y1="142.5" x2="0.5" y2="163.5" id="Line-2-Copy"></line>
+                <line x1="0.5" y1="69.5" x2="0.5" y2="90.5" id="Line-2-Copy-3"></line>
+                <line x1="0.5" y1="335.5" x2="0.5" y2="357.5" id="Line-2-Copy-4"></line>
+                <line x1="0.5" y1="215.5" x2="0.5" y2="284.5" id="Line-2-Copy-2"></line>
+            </g>
+            <text id="{-count:-2-}" font-family="FiraCode-Bold, Fira Code" font-size="16" font-weight="bold" letter-spacing="0.9" fill="#2D3748">
+                <tspan x="5.5" y="405">{ count: 2 }</tspan>
+            </text>
+            <g id="Group-Copy-3" transform="translate(0.000000, 316.000000)">
+                <rect id="Rectangle" fill="#3182CE" x="0" y="0" width="136" height="46" rx="7"></rect>
+                <text id="dehydrate" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="16" font-weight="400" fill="#FFFFFF">
+                    <tspan x="30.656" y="28">dehydrate</tspan>
+                </text>
+            </g>
+            <rect id="Rectangle-Copy" fill="#F7FAFC" x="2" y="254" width="132" height="36"></rect>
+            <text id="&lt;h1&gt;2&lt;/h1&gt;" font-family="FiraCode-Bold, Fira Code" font-size="16" font-weight="bold" letter-spacing="0.9" fill="#AAB6BF">
+                <tspan x="15.5" y="278">&lt;h1&gt;2&lt;/h1&gt;</tspan>
+            </text>
+            <g id="Group-Copy-2" transform="translate(0.000000, 194.000000)">
+                <rect id="Rectangle" fill="#3182CE" x="0" y="0" width="136" height="46" rx="7"></rect>
+                <text id="render()" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="16" font-weight="400" fill="#FFFFFF">
+                    <tspan x="39.688" y="28">render()</tspan>
+                </text>
+            </g>
+            <g id="Group-Copy" transform="translate(0.000000, 121.000000)">
+                <rect id="Rectangle" fill="#3182CE" x="0" y="0" width="136" height="46" rx="7"></rect>
+                <text id="increment()" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="16" font-weight="400" fill="#FFFFFF">
+                    <tspan x="26.8" y="28">increment()</tspan>
+                </text>
+            </g>
+            <g id="Group" transform="translate(0.000000, 48.000000)">
+                <rect id="Rectangle" fill="#3182CE" x="0" y="0" width="136" height="46" rx="7"></rect>
+                <text id="hydrate" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="16" font-weight="400" fill="#FFFFFF">
+                    <tspan x="39.992" y="28">hydrate</tspan>
+                </text>
+            </g>
+            <text id="{-count:-1-}-copy" font-family="FiraCode-Bold, Fira Code" font-size="16" font-weight="bold" letter-spacing="0.9" fill="#2D3748">
+                <tspan x="5.5" y="16">{ count: 1 }</tspan>
+            </text>
+        </g>
+        <text id="Subsequent-Request" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="27" font-weight="bold" fill="#2D3748">
+            <tspan x="559.972" y="69">Subsequent Request</tspan>
+        </text>
+        <text id="Initial-Request" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="27" font-weight="bold" fill="#2D3748">
+            <tspan x="80.8085" y="69">Initial Request</tspan>
+        </text>
+        <text id="User-clicks-“+”" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="20" font-weight="bold" letter-spacing="1.125" fill="#2D3748">
+            <tspan x="379.2225" y="332">User clicks </tspan>
+            <tspan x="504.1625" y="332" font-family="HelveticaNeue-CondensedBlack, Helvetica Neue" font-style="condensed" font-weight="700">“</tspan>
+            <tspan x="514.9075" y="332">+</tspan>
+            <tspan x="528.0325" y="332" font-family="HelveticaNeue-CondensedBlack, Helvetica Neue" font-style="condensed" font-weight="700">”</tspan>
+        </text>
+    </g>
+</svg>

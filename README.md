@@ -1,11 +1,19 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Livewire vs Inertia.js | 關於如何選擇全端框架這檔事
 
-To start the slide show:
+在 {Laravel x Vue}Conf Taiwan 2021 發表的講題
 
-- `npm install`
-- `npm run dev`
+## 簡介
+
+眾所周知，Laravel 是一個優秀的 PHP 後端框架，但要如何和前端完美的銜接，這又是另一個問題。通常常見和前端溝通的方式是用 API，但如果僅僅是開發一個中小型的全端專案，似乎... 也太累了點 (汗)。
+
+今天將和大家介紹2個 Laravel 的全端框架，模糊前後端界線的 Livewire，和建構全端 SPA 卻不用寫 API 的 Inertia.js，讓我們從不同的角度來認識建構全端應用的方式。
+
+## 開啟幻燈片
+
+- `yarn install`
+- `yarn dev`
 - visit http://localhost:3030
 
-Edit the [slides.md](./slides.md) to see the changes.
+## 參考
 
-Learn more about Slidev on [documentations](https://sli.dev/).
+* [前端渲染的後端應用 - 用 Inertia.js 拉近 Laravel 和 Vue.js 的距離](https://docs.google.com/presentation/d/1d5W98rR35jeMDLcsV9xqaoqd-Vdo7_hnsRvuy90AzE0/edit)
