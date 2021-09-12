@@ -4,10 +4,13 @@
   "scripts": {
     "dev": "slidev --open",
     "build": "slidev build",
-    "export": "slidev export"
+    "export": "slidev export --output public/laravelconf-2021-livewire-inertiajs.pdf"
   },
   "dependencies": {
     "@slidev/cli": "^0.22.7",
     "slidev-theme-ycs77": "*"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.14.1"
   }
 }
