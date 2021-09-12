@@ -16,6 +16,7 @@
 
 ## 參考
 
-* [Livewire 官網](https://laravel-livewire.com/)
-* [Inertia.js 官網](https://inertiajs.com/)
-* [前端渲染的後端應用 - 用 Inertia.js 拉近 Laravel 和 Vue.js 的距離](https://docs.google.com/presentation/d/1d5W98rR35jeMDLcsV9xqaoqd-Vdo7_hnsRvuy90AzE0/edit)
+- [Livewire 官網](https://laravel-livewire.com/)
+- [Inertia.js 官網](https://inertiajs.com/)
+- [Introducing Inertia.js](https://reinink.ca/articles/introducing-inertia-js)
+- [前端渲染的後端應用 - 用 Inertia.js 拉近 Laravel 和 Vue.js 的距離](https://docs.google.com/presentation/d/1d5W98rR35jeMDLcsV9xqaoqd-Vdo7_hnsRvuy90AzE0/edit)

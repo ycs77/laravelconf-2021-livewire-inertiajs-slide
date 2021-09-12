@@ -516,6 +516,78 @@ clicks: 4
 
 ---
 
+# 發送 Inertia 請求
+
+<div class="grid grid-cols-2 gap-4">
+
+```js
+import { Inertia } from '@inertiajs/inertia'
+
+Inertia.visit(url, {
+  method: 'get',
+  data: {},
+  replace: false,
+  preserveState: false,
+  preserveScroll: false,
+  only: [],
+  headers: {},
+  errorBag: null,
+  forceFormData: false,
+  onCancelToken: cancelToken => {},
+  onCancel: () => {},
+  onBefore: visit => {},
+  onStart: visit => {},
+  onProgress: progress => {},
+  onSuccess: page => {},
+  onError: errors => {},
+  onFinish: visit => {},
+})
+```
+
+<div>
+
+```js
+import { Inertia } from '@inertiajs/inertia'
+
+Inertia.get(url, data, options)
+Inertia.post(url, data, options)
+Inertia.put(url, data, options)
+Inertia.patch(url, data, options)
+Inertia.delete(url, options)
+```
+
+</div>
+</div>
+
+---
+
+# Inertia Link
+
+```js
+import { Link } from '@inertiajs/inertia-vue3'
+
+<Link href="/">首頁</Link>
+
+// Method：POST / PUT / PATCH / DELETE
+<Link href="/logout" method="post" as="button" type="button">登出</Link>
+// 連結會渲染成
+<button type="button">登出</button>
+
+// post 資料
+<Link href="/endpoint" method="post" :data="{ foo: bar }">Save</Link>
+
+// 替換歷史紀錄
+<Link href="/" replace>首頁</Link>
+
+// 保持滾動條位置
+<Link href="/" preserve-scroll>首頁</Link>
+
+// Partial reloads (局部重載)
+<Link href="/users?active=true" :only="['likes_count']">喜歡</Link>
+```
+
+---
+
 # Inertia Adapters (支援的框架)
 
 <div class="text-lg mt-8">
@@ -736,9 +808,44 @@ layout: center
 class: text-center
 ---
 
+# Inertia Demo
+
+<img class="h-[380px] rounded" src="https://raw.githubusercontent.com/inertiajs/pingcrm/master/screenshot.png" />
+
+[Demo application](https://inertiajs.com/demo-application) | [Ping CRM](https://demo.inertiajs.com/) | [GitHub](https://github.com/inertiajs/pingcrm)
+
+---
+
+# SSR (服務端渲染) - 優化 SEO <span class="px-2 py-0.5 bg-yellow-700 text-yellow-300 text-base font-normal rounded align-middle">測試階段</span>
+
+<v-clicks>
+
+1. 發送請求進入後端框架 - <YellowText bold>Laravel</YellowText>
+2. Inertia 將 **Page 物件** 發送給本地 SSR Server，<br>
+   使用 Node.js 將當前頁面的 **前端組件** 渲染為 HTML - <YellowText bold>Node.js</YellowText>
+3. 將 HTML 插入到響應中並回傳給用戶
+4. SSR 模式下啟動前端框架 - <YellowText bold>vue-server-renderer</YellowText><br>
+   (Vue、React、Svelte 都有處理 SSR 的工具)
+5. SSR 渲染只會在進頁面時執行，之後就會以 SPA 模式運作
+
+</v-clicks>
+
+<div v-click>
+
+[Ping CRM - SSR](https://ssr-demo.inertiajs.com/)
+
+</div>
+
+---
+layout: center
+class: text-center
+---
+
 # TALL Stack
 
-Tailwind CSS + Alpine.js + Laravel + Livewire
+<div class="text-3xl">
+<YellowText bold>T</YellowText>ailwind CSS + <YellowText bold>A</YellowText>lpine.js + <YellowText bold>L</YellowText>aravel + <YellowText bold>L</YellowText>ivewire
+</div>
 
 ---
 layout: center
@@ -747,7 +854,9 @@ class: text-center
 
 # VILT Stack
 
-Vue.js  +  Inertia.js  +  Laravel  +  Tailwind CSS
+<div class="text-3xl">
+<YellowText bold>V</YellowText>ue.js  +  <YellowText bold>I</YellowText>nertia.js  +  <YellowText bold>L</YellowText>aravel  +  <YellowText bold>T</YellowText>ailwind CSS
+</div>
 
 ---
 layout: center
@@ -764,8 +873,8 @@ class: text-center
 
 |                 | <strong class="!text-livewire text-xl">Livewire</strong> | <strong class="!text-inertia text-xl">Inertia.js</strong> |
 | --------------- | -------------------------------------------------------- | --------------------------------------------------------- |
-| **視圖 (View)** | Blade、PHP、Alpine.js                                    | 前端框架 Vue、React...                                    |
 | **框架**        | Laravel                                                  | 支援 Inertia 的框架                                       |
+| **視圖 (View)** | Blade、PHP、Alpine.js                                    | 前端框架 Vue、React...                                    |
 | **SEO**         | <strong class="!text-green-400">易</strong>              | <strong class="!text-red-400">難</strong>                 |
 | **總結**        | 用 PHP 寫出 JavaScript 的效果                    | 前後端框架的膠水                                          |
 
@@ -779,3 +888,14 @@ class: text-center
 <div class="my-8"></div>
 
 # Vue.js <fa-solid-arrow-right class="inline-block w-6 h-6 text-indigo-300" /> <strong class="!text-[#9553e9]">Inertia.js</strong>
+
+---
+
+# 參考資料
+
+- [Livewire 官網](https://laravel-livewire.com/)
+- [Inertia.js 官網](https://inertiajs.com/)
+- [Laravel Jetstream 官網](https://jetstream.laravel.com/)
+- [TALL stack](https://tallstack.dev/)
+- [VILT Stack](https://ejntaylor.com/vilt-stack-vue-inertia-laravel-tailwind/)
+- [前端渲染的後端應用 - 用 Inertia.js 拉近 Laravel 和 Vue.js 的距離](https://events.laravel-dojo.com/events/8-php-也有-day-56)
