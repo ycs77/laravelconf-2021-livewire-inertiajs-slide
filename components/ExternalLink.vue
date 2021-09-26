@@ -1,5 +1,5 @@
 <template>
-  <a :href="url" target="_blank">
+  <a v-if="show" :href="url" target="_blank">
     <fa-solid-external-link-alt class="abs-tr w-6 h-6 mx-14 my-10" />
   </a>
 </template>
@@ -21,6 +21,8 @@ export default {
     },
   },
   setup(props) {
+    const show = import.meta.env.MODE === 'development'
+
     const endpoint =
       props.livewire ? import.meta.env.VITE_LIVEWIRE_URL :
       props.inertia ? import.meta.env.VITE_INERTIA_URL :
@@ -28,7 +30,7 @@ export default {
 
     const url = endpoint + props.path
 
-    return { url }
+    return { show, url }
   },
 }
 </script>
