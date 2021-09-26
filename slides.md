@@ -17,10 +17,6 @@ info: |
 <h1 class="!font-light"><strong class="!text-[#fb70a9]">Livewire</strong> vs <strong class="!text-[#9553e9]">Inertia.js</strong></h1>
 <h2 class="!text-5xl">關於如何選擇<YellowText bold>全端框架</YellowText>這檔事</h2>
 
-<div class="abs-bl mx-14 my-10 flex gap-2">
-  <img class="w-[160px] opacity-70" src="https://laravelconf.tw/_nuxt/img/logo.a62516f.svg" title="{Laravel x Vue}Conf Taiwan 2021" />
-</div>
-
 ---
 layout: presenter
 ---
@@ -148,7 +144,7 @@ class: text-center
   <button class="px-12 py-3 bg-livewire text-white text-xl rounded focus:outline-none focus:ring-2 focus:ring-livewire focus:ring-offset-4 focus:ring-offset-indigo-900" @click="$slidev.nav.next()">
     Livewire
   </button>
-  <button class="px-12 py-3 bg-inertia text-white text-xl rounded focus:outline-none focus:ring-2 focus:ring-inertia focus:ring-offset-4 focus:ring-offset-indigo-900" @click="$slidev.nav.go(16)">Inertia.js</button>
+  <button class="px-12 py-3 bg-inertia text-white text-xl rounded focus:outline-none focus:ring-2 focus:ring-inertia focus:ring-offset-4 focus:ring-offset-indigo-900" @click="$slidev.nav.go(17)">Inertia.js</button>
 </div>
 
 ---
@@ -168,7 +164,7 @@ layout: center
 - SEO 友好
 
 ---
-clicks: 3
+clicks: 4
 ---
 
 # 計數器
@@ -179,7 +175,12 @@ clicks: 3
 <div class="text-gray-400 tracking-wide">Livewire 組件</div>
 <div class="text-gray-400 tracking-wide">Livewire 視圖</div>
 
-```php {all|13-16|6|8-11} {at:0}
+```php {all|1-4|18-21|11|13-16} {at:0}
+// routes/web.php
+use App\Http\Livewire\Counter;
+
+Route::get('/', Counter::class);
+
 // app/Http/Livewire/Counter.php
 use Livewire\Component;
 
@@ -199,9 +200,9 @@ class Counter extends Component
 }
 ```
 
-```html {all|all|5|3} {at:0}
+```html {all|all|all|5|3} {at:0}
 <!-- resources/views/livewire/counter.blade.php -->
-<div style="text-align: center">
+<div>
     <button wire:click="increment">+</button>
 
     <h1>{{ $count }}</h1>
@@ -266,6 +267,18 @@ class DataBinding extends Component
 </div>
 
 ---
+
+# Polling (輪詢)
+
+<ExternalLink livewire path="polling" />
+
+```html
+<div wire:poll.1s>
+    {{ now() }}
+</div>
+```
+
+---
 clicks: 2
 ---
 
@@ -311,6 +324,18 @@ class Search extends Component
 ```
 
 </div>
+
+---
+
+# Livewire 其他功能
+
+- 上傳檔案
+- 下載檔案
+- 授權
+- 分頁
+- 載入狀態
+- 離線狀態
+- Loading 狀態
 
 ---
 layout: center
@@ -629,12 +654,13 @@ clicks: 2
 - 渲染頁面
 
 ```php
-// routes/web.php
 use Inertia\Inertia;
 
 Route::get('/', function () {
     return Inertia::render('Home');
 });
+// 或
+Route::inertia('/', 'Home');
 ```
 
 ```vue
@@ -646,11 +672,10 @@ Route::get('/', function () {
 
 - Prop 傳資料
 
-```php {all|6} {at:1}
-// routes/web.php
+```php {all|5} {at:1}
 use Inertia\Inertia;
 
-Route::get('about', function () {
+Route::get('/about', function () {
     return Inertia::render('About', [
         'name' => 'Lucas',
     ]);
@@ -677,6 +702,108 @@ export default {
 </div>
 
 ---
+
+# Layout
+
+```vue
+<template>
+  <div>...</div>
+</template>
+
+<script>
+import Layout from '@/Layout.vue'
+
+export default {
+  layout: Layout,
+  ...
+}
+</script>
+```
+
+---
+
+# 會員登入
+
+<ExternalLink inertia path="login" />
+
+```php
+use Inertia\Inertia;
+
+class LoginController extends Controller
+{
+    public function loginView()
+    {
+        return Inertia::render('Auth/Login');
+    }
+
+    public function login(Request $request)
+    {
+        // Auth::attempt()...
+    }
+
+    public function logout(Request $request)
+    {
+        // Auth::logout()...
+    }
+}
+```
+
+---
+
+# 會員登入
+
+<ExternalLink inertia path="login" />
+
+<div class="grid grid-cols-2 gap-6">
+
+```vue
+<template>
+  <h1>會員登入</h1>
+
+  <form @submit.prevent="form.post('/login')">
+    <div class="input-group">
+      <label>E-mail：</label>
+      <input type="text" v-model="form.email">
+      <div v-if="form.errors.email" class="invalid">
+        {{ form.errors.email }}
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label>密碼：</label>
+      <input type="password" v-model="form.password">
+    </div>
+
+    <button>送出</button>
+  </form>
+  ...
+</template>
+```
+
+<div>
+
+```vue
+<script>
+import { useForm } from '@inertiajs/inertia-vue3'
+
+export default {
+  // ...
+  setup() {
+    const form = useForm({
+      email: '',
+      password: '',
+    })
+
+    return { form }
+  },
+}
+</script>
+```
+
+</div>
+</div>
+
+---
 clicks: 1
 ---
 
@@ -684,22 +811,28 @@ clicks: 1
 
 <ExternalLink inertia path="comments" />
 
-資料庫拿資料
+跟資料庫拿資料
 
 <div class="grid grid-cols-2 gap-6">
 
-```php {all|3-9} {at:0}
-Route::get('comments', function () {
-    return Inertia::render('Comments', [
-        'comments' => Comment::all()
-            ->transform(fn (Comment $comment) => [
-                'id' => $comment->id,
-                'name' => $comment->name,
-                'content' => $comment->content,
-                'created_at' => $comment->created_at->format('Y/m/d H:i'),
-            ]),
-    ]);
-});
+```php {all|6-13} {at:0}
+class CommentController extends Controller
+{
+    public function index()
+    {
+        return Inertia::render('Comments', [
+            'comments' => Comment::all()
+                ->transform(fn (Comment $comment) => [
+                    'id' => $comment->id,
+                    'name' => $comment->name,
+                    'content' => $comment->content,
+                    'created_at' => $comment
+                        ->created_at
+                        ->format('Y/m/d H:i'),
+                ]),
+        ]);
+    }
+}
 ```
 
 ```vue {all|5-9,16} {at:0}
@@ -728,25 +861,6 @@ export default {
 </div>
 
 ---
-
-# 留言板 - 表單送出
-
-<ExternalLink inertia path="comments" />
-
-```php
-Route::post('comments', function (Request $request) {
-    $data = $request->validate([
-        'name' => 'required',
-        'content' => 'required',
-    ]);
-
-    Comment::create($data);
-
-    return back();
-});
-```
-
----
 clicks: 3
 ---
 
@@ -756,28 +870,32 @@ clicks: 3
 
 <div class="grid grid-cols-2 gap-6">
 
-```vue {all|5,10|4,15|6-8,11-13} {at:0}
+```vue {all|7,14|4,19|8-10,15-17} {at:0}
 <template>
   <h1>留言</h1>
 
   <form @submit.prevent="storeComment">
-    <div>姓名：<input type="text" v-model="form.name"></div>
-    <div v-if="form.errors.name" class="invalid">
-      {{ form.errors.name }}
+    <div class="input-group">
+      <label>姓名：</label>
+      <input type="text" v-model="form.name">
+      <div v-if="form.errors.name" class="invalid">
+        {{ form.errors.name }}
+      </div>
     </div>
-
-    <div>留言：<textarea v-model="form.content"></textarea></div>
-    <div v-if="form.errors.content" class="invalid">
-      {{ form.errors.content }}
+    <div class="input-group">
+      <label>留言：</label>
+      <textarea v-model="form.content"></textarea>
+      <div v-if="form.errors.content" class="invalid">
+        {{ form.errors.content }}
+      </div>
     </div>
-
     <button>送出</button>
   </form>
   ...
 </template>
 ```
 
-```vue {all|2,7-10|13-15|0} {at:0}
+```vue {all|2,7-10|12-16|0} {at:0}
 <script>
 import { useForm } from '@inertiajs/inertia-vue3'
 
@@ -804,15 +922,53 @@ export default {
 </div>
 
 ---
+
+# 留言板 - 表單送出
+
+<ExternalLink inertia path="comments" />
+
+```php
+
+class CommentController extends Controller
+{
+    public function store(Request $request)
+    {
+        $data = $request->validate([
+            'name' => 'required',
+            'content' => 'required',
+        ], [
+            'name.required' => '請輸入姓名',
+            'content.required' => '請輸入留言',
+        ]);
+
+        Comment::create($data);
+
+        return back();
+    }
+}
+```
+
+---
+layout: center
+class: text-center
+---
+
+# 錯誤處理
+
+<ExternalLink inertia />
+
+<img class="h-[380px] rounded" src="/images/fail.jpg" />
+
+---
 layout: center
 class: text-center
 ---
 
 # Inertia Demo
 
-<img class="h-[380px] rounded" src="https://raw.githubusercontent.com/inertiajs/pingcrm/master/screenshot.png" />
+<img class="h-[380px] rounded" src="https://raw.githubusercontent.com/inertiajs/pingcrm/99b88e/screenshot.png" />
 
-[Demo application](https://inertiajs.com/demo-application) | [Ping CRM](https://demo.inertiajs.com/) | [GitHub](https://github.com/inertiajs/pingcrm)
+[官方介紹](https://inertiajs.com/demo-application) | [Ping CRM](https://demo.inertiajs.com/) | [GitHub](https://github.com/inertiajs/pingcrm)
 
 ---
 
@@ -832,7 +988,7 @@ class: text-center
 
 <div v-click>
 
-[Ping CRM - SSR](https://ssr-demo.inertiajs.com/)
+[Ping CRM - SSR Demo](https://ssr-demo.inertiajs.com/)
 
 </div>
 
@@ -860,12 +1016,19 @@ class: text-center
 
 ---
 layout: center
-class: text-center
 ---
 
-<div class="p-8 bg-white rounded shadow-indigo-600">
+<div class="p-6 bg-white rounded shadow-indigo-600 mb-4">
   <img src="/images/jetstream-logo.svg" />
 </div>
+
+- **Livewire** or **Inertia**
+- 會員登入/註冊
+- E-mail 驗證
+- 雙因素身分驗證
+- 登入 Session 管理
+- API token (Laravel Sanctum)
+- 團隊功能
 
 ---
 
