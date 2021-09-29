@@ -2,6 +2,7 @@
 theme: ycs77
 title: Livewire vs Inertia.js | 關於如何選擇全端框架這檔事
 highlighter: shiki
+download: https://laravelconf-2021-livewire-inertiajs-slide.vercel.app/pdf
 info: |
   ## Livewire vs Inertia.js<br>關於如何選擇全端框架這檔事
 
