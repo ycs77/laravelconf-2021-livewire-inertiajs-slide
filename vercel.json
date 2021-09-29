@@ -2,6 +2,9 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
+  "redirects": [
+    { "source": "/pdf", "destination": "https://github.com/ycs77/laravelconf-2021-livewire-inertiajs-slide/blob/main/public/laravelconf-2021-livewire-inertiajs.pdf?raw=true", "permanent": false }
+  ],
   "github": {
     "silent": true
   }
