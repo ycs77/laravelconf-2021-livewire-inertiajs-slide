@@ -504,7 +504,7 @@ clicks: 4
 
 </div>
 <div>
-  <img src="/images/code 1.png" />
+  <img src="/images/code-1.png" />
 </div>
 </div>
 
@@ -535,7 +535,7 @@ clicks: 4
 </div>
 </div>
 <div>
-  <img src="/images/code 2.png" />
+  <img src="/images/code-2.png" />
 </div>
 </div>
 
