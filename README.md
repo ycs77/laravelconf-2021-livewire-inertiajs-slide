@@ -10,7 +10,7 @@ Lucas 於 {Laravel x Vue}Conf Taiwan 2021 分享的議程
 
 今天將和大家介紹2個 Laravel 的全端框架，模糊前後端界線的 Livewire，和建構全端 SPA 卻不用寫 API 的 Inertia.js，讓我們從不同的角度來認識建構全端應用的方式。
 
-## 開啟幻燈片
+## 本地啟動幻燈片
 
 - `yarn install`
 - `yarn dev`
