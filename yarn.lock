@@ -2310,9 +2310,9 @@ slash@^3.0.0:
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
 slidev-theme-ycs77@*:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/slidev-theme-ycs77/-/slidev-theme-ycs77-0.1.6.tgz#e591579c956d5c266359f439f4dc86f694d38c13"
-  integrity sha512-irfw1vQKobvg5zR97CuEYGRRnLwgdWYd0wKYAFdXA3XAiz6faPXF13wwQYh3OxaEO1zJk/56DGUVni0+cfcU8w==
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/slidev-theme-ycs77/-/slidev-theme-ycs77-0.1.8.tgz#545e3a07b8e1a422752d6f998ae1f73551b5a53e"
+  integrity sha512-4n0p6j29S0KNYFenhrZa1FhQwZpLuv1hq3WQqq8flpHeZ1OJl1qu91Uj1tCxuQqaaW4FdWwzVNOppgrbOOmJ+w==
   dependencies:
     "@slidev/types" "^0.22.7"
     codemirror-theme-vars "^0.1.1"
