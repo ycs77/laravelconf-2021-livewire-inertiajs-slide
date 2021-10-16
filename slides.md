@@ -80,10 +80,10 @@ class: text-center
 
 <div class="min-w-2xl flex justify-evenly items-center mt-16">
   <div>
-    <img class="h-16" src="/images/jquery-logo.svg">
+    <img class="h-16" src="/assets/jquery-logo.svg">
   </div>
   <div>
-    <img class="h-32" src="/images/bootstrap-logo.svg">
+    <img class="h-32" src="/assets/bootstrap-logo.svg">
   </div>
 </div>
 
@@ -154,7 +154,7 @@ layout: center
 
 <div class="text-center">
   <div class="inline-block px-6 py-4 bg-white rounded-lg mb-8">
-    <img src="/images/livewire-logo.svg" />
+    <img src="/assets/livewire-logo.svg" />
   </div>
 </div>
 
@@ -216,7 +216,7 @@ class Counter extends Component
 
 # 運作原理
 
-<img class="bg-white max-h-sm rounded-md" src="/images/livewire-lifecycle-timeline.svg">
+<img class="bg-white max-h-sm rounded-md" src="/assets/livewire-lifecycle-timeline.svg">
 
 ---
 clicks: 3
@@ -399,7 +399,7 @@ class: text-center
     </div>
     <div class="flex justify-center items-center text-4xl">+</div>
     <div class="flex justify-center items-center">
-      <img src="/images/inertia-logo.svg" />
+      <img src="/assets/inertia-logo.svg" />
     </div>
   </div>
   <div class="px-6 flex items-center text-4xl">=</div>
@@ -419,8 +419,8 @@ clicks: 4
 <div class="max-w-xl mx-auto">
 <div class="text-center">
   <div class="inline-flex flex-col px-12 py-5 bg-gradient-to-r from-[#9553e9] to-[#6d74ed] rounded-lg mb-8">
-    <img class="w-[150px]" src="/images/inertia-logo.svg" />
-    <img class="w-[150px] mt-2" src="/images/inertia-logo-text.svg" />
+    <img class="w-[150px]" src="/assets/inertia-logo.svg" />
+    <img class="w-[150px] mt-2" src="/assets/inertia-logo-text.svg" />
   </div>
 </div>
 <v-clicks at="0">
@@ -444,7 +444,7 @@ clicks: 4
     <YellowText bold>/events/80</YellowText>
   </div>
   <div class="col-span-2 flex justify-center items-center relative">
-    <img class="w-48" src="/images/arrow-1.svg" />
+    <img class="w-48" src="/assets/arrow-1.svg" />
     <div class="absolute left-[4rem] bottom-[3rem] text-cyan-400 font-normal">HTTP 請求</div>
   </div>
   <div class="col-span-2 flex flex-col justify-center items-center pr-8">
@@ -456,7 +456,7 @@ clicks: 4
     <YellowText bold>/api/events/80</YellowText>
   </div>
   <div class="col-span-2 flex justify-center items-center relative">
-    <img class="w-48" src="/images/arrow-1.svg" />
+    <img class="w-48" src="/assets/arrow-1.svg" />
     <div class="absolute left-[4rem] bottom-[3rem] text-cyan-400 font-normal">XHR 請求</div>
   </div>
   <div class="col-span-2 flex flex-col justify-center items-center pr-8">
@@ -475,7 +475,7 @@ clicks: 4
     <YellowText bold>/events/80</YellowText>
   </div>
   <div class="col-span-2 flex justify-center items-center relative">
-    <img class="w-48" src="/images/arrow-2.svg" />
+    <img class="w-48" src="/assets/arrow-2.svg" />
     <div class="absolute left-[4rem] top-[4rem] text-cyan-400 font-normal">HTTP 請求</div>
     <div class="absolute left-[2.5rem] bottom-[3.5rem] text-cyan-400 font-normal">Inertia 請求 (XHR)</div>
   </div>
@@ -485,7 +485,7 @@ clicks: 4
       <div class="mt-4 text-xl font-bold">HTML 響應</div>
     </div>
     <div class="flex-1 flex flex-col justify-center items-center pr-8">
-      <img src="/images/inertia-logo.svg" />
+      <img src="/assets/inertia-logo.svg" />
       <div class="mt-4 text-xl font-bold mt-8">Inertia 響應</div>
     </div>
   </div>
@@ -505,7 +505,7 @@ clicks: 4
 
 </div>
 <div>
-  <img src="/images/code-1.png" />
+  <img src="/assets/code-1.png" />
 </div>
 </div>
 
@@ -536,7 +536,7 @@ clicks: 4
 </div>
 </div>
 <div>
-  <img src="/images/code-2.png" />
+  <img src="/assets/code-2.png" />
 </div>
 </div>
 
@@ -958,7 +958,7 @@ class: text-center
 
 <ExternalLink inertia />
 
-<img class="h-[380px] rounded" src="/images/fail.jpg" />
+<img class="h-[380px] rounded" src="/assets/fail.jpg" />
 
 ---
 layout: center
@@ -1020,7 +1020,7 @@ layout: center
 ---
 
 <div class="p-6 bg-white rounded shadow-indigo-600 mb-4">
-  <img src="/images/jetstream-logo.svg" />
+  <img src="/assets/jetstream-logo.svg" />
 </div>
 
 - **Livewire** or **Inertia**
