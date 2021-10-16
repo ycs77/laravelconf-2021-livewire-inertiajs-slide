@@ -2,7 +2,9 @@
 
 Lucas 在 [{Laravel x Vue}Conf Taiwan 2021](https://laravelconf.tw/) 分享 Livewire 和 Inertia.js 的議程
 
-簡報：[SPA](https://laravelconf-2021-livewire-inertiajs-slide.vercel.app/) | [PDF](https://laravelconf-2021-livewire-inertiajs-slide.vercel.app/pdf)
+簡報：[網頁版](https://laravelconf-2021-livewire-inertiajs-slide.vercel.app/) | [PDF 下載](https://laravelconf-2021-livewire-inertiajs-slide.vercel.app/pdf)
+
+範例：[Livewire 範例](https://github.com/ycs77/laravelconf-2021-livewire-example) | [Inertia 範例](https://github.com/ycs77/laravelconf-2021-inertia-example)
 
 ## 簡介
 
@@ -15,11 +17,6 @@ Lucas 在 [{Laravel x Vue}Conf Taiwan 2021](https://laravelconf.tw/) 分享 Live
 - `yarn install`
 - `yarn dev`
 - 開啟 http://localhost:3030
-
-## 範例
-
-- [Livewire 範例](https://github.com/ycs77/laravelconf-2021-livewire-example)
-- [Inertia 範例](https://github.com/ycs77/laravelconf-2021-inertia-example)
 
 ## 參考
 
