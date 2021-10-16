@@ -147,7 +147,7 @@ class: text-center
   <button class="px-12 py-3 bg-livewire text-white text-xl rounded focus:outline-none focus:ring-2 focus:ring-livewire focus:ring-offset-4 focus:ring-offset-indigo-900" @click="$slidev.nav.next()">
     Livewire
   </button>
-  <button class="px-12 py-3 bg-inertia text-white text-xl rounded focus:outline-none focus:ring-2 focus:ring-inertia focus:ring-offset-4 focus:ring-offset-indigo-900" @click="$slidev.nav.go(17)">Inertia.js</button>
+  <button class="px-12 py-3 bg-inertia text-white text-xl rounded focus:outline-none focus:ring-2 focus:ring-inertia focus:ring-offset-4 focus:ring-offset-indigo-900" @click="$slidev.nav.go(18)">Inertia.js</button>
 </div>
 
 ---
