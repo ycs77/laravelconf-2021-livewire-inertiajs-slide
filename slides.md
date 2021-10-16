@@ -13,6 +13,8 @@ info: |
   眾所周知，Laravel 是一個優秀的 PHP 後端框架，但要如何和前端完美的銜接，這又是另一個問題。通常常見和前端溝通的方式是用 API，但如果僅僅是開發一個中小型的全端專案，似乎... 也太累了點 (汗)。
 
   今天將和大家介紹2個 Laravel 的全端框架，模糊前後端界線的 **Livewire**，和建構全端 SPA 卻不用寫 API 的 **Inertia.js**，讓我們從不同的角度來認識建構全端應用的方式。
+
+  [Livewire 範例](https://github.com/ycs77/laravelconf-2021-livewire-example) | [Inertia 範例](https://github.com/ycs77/laravelconf-2021-inertia-example)
 ---
 
 <h1 class="!font-light"><strong class="!text-[#fb70a9]">Livewire</strong> vs <strong class="!text-[#9553e9]">Inertia.js</strong></h1>
