@@ -7,10 +7,12 @@
     "export": "slidev export --output public/laravelconf-2021-livewire-inertiajs.pdf"
   },
   "dependencies": {
-    "@slidev/cli": "^0.22.7",
+    "@slidev/cli": "^0.27.8",
     "slidev-theme-ycs77": "*"
   },
   "devDependencies": {
+    "@iconify-json/fa-solid": "^1.0.2",
+    "@iconify-json/ri": "^1.0.1",
     "playwright-chromium": "^1.14.1"
   }
 }
