@@ -8,7 +8,7 @@ Lucas 在 [{Laravel x Vue}Conf Taiwan 2021](https://laravelconf.tw/) 分享 Live
 
 ## 課程宣傳
 
-[<img src="https://thumbnails.f5ezcode.in/eyJidWNrZXQiOiJjZG4uaGlza2lvLmNvbSIsImtleSI6ImNvdXJzZXNcLzhqa2JzbXhjZWlocnpxcSIsImVkaXRzIjp7InBuZyI6eyJxdWFsaXR5Ijo4MH0sInJlc2l6ZSI6eyJmaXQiOiJjb250YWluIiwid2lkdGgiOjgwMH19fQ==" width="360" />](https://hiskio.com/fundraising/620/about?s=tc)
+[<img src="https://lucas-hiskio-2021-tailwindcss-slide.vercel.app/thumbnail.png" width="360" />](https://hiskio.com/fundraising/620/about?s=tc)
 
 我和 HiSIO 合作開設了一堂結合 Tailwind CSS + Vue3 的課程，課程我會帶大家用製作一個部落格的後台頁面 UI，包含文章列表、編輯表單、富文本編輯器、用戶資料設定等，並使用 Vite 作為開發/編譯工具。
 
