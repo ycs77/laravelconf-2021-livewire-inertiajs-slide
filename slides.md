@@ -1057,6 +1057,13 @@ class: text-center
 
 ---
 
+# 簡報
+
+- 簡報：[網頁版](https://laravelconf-2021-livewire-inertiajs-slide.vercel.app/) | [PDF 下載](https://laravelconf-2021-livewire-inertiajs-slide.vercel.app/pdf)
+- 範例：[Livewire 範例](https://github.com/ycs77/laravelconf-2021-livewire-example) | [Inertia 範例](https://github.com/ycs77/laravelconf-2021-inertia-example)
+
+<div class="py-6"></div>
+
 # 參考資料
 
 - [Livewire 官網](https://laravel-livewire.com/)
