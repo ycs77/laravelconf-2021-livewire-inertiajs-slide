@@ -1072,4 +1072,4 @@ class: text-center
 - [Laravel Jetstream 官網](https://jetstream.laravel.com/)
 - [TALL stack](https://tallstack.dev/)
 - [VILT Stack](https://ejntaylor.com/vilt-stack-vue-inertia-laravel-tailwind/)
-- [前端渲染的後端應用 - 用 Inertia.js 拉近 Laravel 和 Vue.js 的距離](https://events.laravel-dojo.com/events/8-php-也有-day-56)
+- [前端渲染的後端應用 - 用 Inertia.js 拉近 Laravel 和 Vue.js 的距離](https://youtu.be/yxo-h0scF98)
